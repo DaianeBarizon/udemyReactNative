@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   View,
   Text,
+  Button,
 } from 'react-native';
 
 class MyComponent extends Component {
@@ -9,13 +10,7 @@ class MyComponent extends Component {
     return (
       <View>
         <Text>
-          {this.props.props}
-        </Text>
-        <Text>
-          {this.props.xyx}
-        </Text>
-        <Text>
-          {this.props.qualquercoisa}
+          Texto simples
         </Text>
       </View>
     );
@@ -23,9 +18,19 @@ class MyComponent extends Component {
 }
 
 class App extends Component {
+  // constructor() {
+
+  // }
+
+
   render() {
     return (
-      <MyComponent props='Banana' xyx='Uva' qualquercoisa='Goiaba'></MyComponent>
+      <View>
+        <MyComponent></MyComponent>
+        <Button
+          title='Clicar'
+        />
+      </View>
     )
   }
 }
