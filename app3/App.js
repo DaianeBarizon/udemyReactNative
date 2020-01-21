@@ -9,10 +9,13 @@ class MyComponent extends Component {
     return (
       <View>
         <Text>
-          Primeiro Conteúdo
+          {this.props.props}
         </Text>
         <Text>
-          Segundo Conteúdo
+          {this.props.xyx}
+        </Text>
+        <Text>
+          {this.props.qualquercoisa}
         </Text>
       </View>
     );
@@ -22,7 +25,7 @@ class MyComponent extends Component {
 class App extends Component {
   render() {
     return (
-      <MyComponent></MyComponent>
+      <MyComponent props='Banana' xyx='Uva' qualquercoisa='Goiaba'></MyComponent>
     )
   }
 }
