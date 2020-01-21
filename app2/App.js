@@ -5,8 +5,9 @@ import {
   View,
   Button,
   TouchableOpacity,
+  Image,
+  ImageBackground,
 } from 'react-native';
-
 
 const ButtonPress = () => {
   alert('teste');
@@ -15,6 +16,20 @@ const ButtonPress = () => {
 const App = () => {
   return (
     <View style={styles.sectionContainer}>
+      <Image
+        style={{ width: 300, height: 300 }}
+        source={require('./imagens/uvas.png')}
+      />
+      <ImageBackground
+        style={{ width: 100, height: 100 }}
+        source={{ uri: 'https://facebook.github.io/react-native/img/opengraph.png' }}
+      >
+        <Text style={styles.sectionImage}>React</Text>
+      </ImageBackground>
+      <Image
+        style={{ width: 50, height: 50 }}
+        source={{ uri: 'https://facebook.github.io/react-native/img/tiny_logo.png' }}
+      />
       <Text style={styles.sectionHeader}>
         Title
       </Text>
@@ -33,7 +48,7 @@ const App = () => {
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonDescription}>Clique aqui</Text>
       </TouchableOpacity>
-    </View>
+    </View >
   );
 };
 
@@ -77,6 +92,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textTransform: 'uppercase',
   },
+
+  sectionImage: {
+    justifyContent: 'flex-end',
+    padding: 20,
+  }
 });
 
 export default App;
