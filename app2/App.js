@@ -3,7 +3,14 @@ import {
   StyleSheet,
   Text,
   View,
+  Button,
+  TouchableOpacity,
 } from 'react-native';
+
+
+const ButtonPress = () => {
+  alert('teste');
+}
 
 const App = () => {
   return (
@@ -17,6 +24,15 @@ const App = () => {
       <Text style={styles.sectionFooter}>
         Footer
       </Text>
+      <Button
+        onPress={ButtonPress}
+        title='Clique aqui'
+        color='#841548'
+        accessibilityLabel='Clique para abrir as notícias!'
+      />
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonDescription}>Clique aqui</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -40,6 +56,26 @@ const styles = StyleSheet.create({
   sectionFooter: {
     backgroundColor: '#1349de',
     flex: 1,
+  },
+
+  button: {
+    backgroundColor: '#2457d5',
+    padding: 10,
+    borderColor: '#df1256',
+    borderWidth: 3,
+    borderRadius: 50,
+    shadowColor: '#000',
+    shadowOffset: { width: 8, height: 10 },
+    shadowOpacity: 1,
+    elevation: 5,
+    margin: 14,
+  },
+
+  buttonDescription: {
+    color: '#fff',
+    textAlign: 'center',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
   },
 });
 
