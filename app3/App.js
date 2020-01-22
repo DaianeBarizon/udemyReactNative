@@ -8,20 +8,32 @@ import {
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { escolhaUsuario: '' }
+    this.state = { escolhaUsuario: '', escolhaComputador: '' }
   }
 
-  jokenpo(escolhaUsuario) {
-    //alert(escolhaUsuario);
-    this.setState({ escolhaUsuario: escolhaUsuario })
+  jokenpo(escolhaUsuario, escolhaComputador) {
+    //gerar números aleatórios ( 0, 1, 2 )
+    var numAletorio = Math.floor(Math.random() * 3);
+    var escolhaComputador = '';
+
+    switch (numAletorio) {
+      case 0: escolhaComputador = 'pedra'; break;
+      case 1: escolhaComputador = 'papel'; break;
+      case 2: escolhaComputador = 'tesoura'; break;
+    }
+
+    this.setState({
+      escolhaUsuario: escolhaUsuario,
+      escolhaComputador: escolhaComputador
+    })
   }
 
   render() {
     return (
       <View>
-        <Text>Escolha do Computador</Text>
+        <Text>Escolha do Computador: {this.state.escolhaComputador}</Text>
         <Text>Escolha do Usuário: {this.state.escolhaUsuario}</Text>
-        <Text>Resultado</Text>
+        <Text>Resultados: </Text>
         <Button title='pedra' onPress={() => { this.jokenpo('pedra') }} />
         <Button title='papel' onPress={() => { this.jokenpo('papel') }} />
         <Button title='tesoura' onPress={() => { this.jokenpo('tesoura') }} />
