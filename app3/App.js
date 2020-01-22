@@ -22,9 +22,45 @@ class App extends Component {
       case 2: escolhaComputador = 'tesoura'; break;
     }
 
+    var resultado = '';
+
+    if (escolhaComputador == 'pedra') {
+      if (escolhaUsuario == 'pedra') {
+        resultado = 'Empate';
+      }
+      if (escolhaUsuario == 'papel') {
+        resultado = 'Você Ganhou!';
+      } else {
+        resultado = 'Você Perdeu :(';
+      }
+    }
+
+    if (escolhaComputador == 'papel') {
+      if (escolhaUsuario == 'papel') {
+        resultado = 'Empate';
+      }
+      if (escolhaUsuario == 'tesoura') {
+        resultado = 'Você Ganhou!';
+      } else {
+        resultado = 'Você Perdeu :(';
+      }
+    }
+
+    if (escolhaComputador == 'tesoura') {
+      if (escolhaUsuario == 'tesoura') {
+        resultado = 'Empate';
+      }
+      if (escolhaUsuario == 'pedra') {
+        resultado = 'Você Ganhou!';
+      } else {
+        resultado = 'Você Perdeu :(';
+      }
+    }
+
     this.setState({
       escolhaUsuario: escolhaUsuario,
-      escolhaComputador: escolhaComputador
+      escolhaComputador: escolhaComputador,
+      resultado: resultado
     })
   }
 
@@ -33,7 +69,7 @@ class App extends Component {
       <View>
         <Text>Escolha do Computador: {this.state.escolhaComputador}</Text>
         <Text>Escolha do Usuário: {this.state.escolhaUsuario}</Text>
-        <Text>Resultados: </Text>
+        <Text>Resultados: {this.state.resultado}</Text>
         <Button title='pedra' onPress={() => { this.jokenpo('pedra') }} />
         <Button title='papel' onPress={() => { this.jokenpo('papel') }} />
         <Button title='tesoura' onPress={() => { this.jokenpo('tesoura') }} />
