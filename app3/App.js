@@ -10,7 +10,7 @@ class MyComponent extends Component {
     return (
       <View>
         <Text>
-          Texto simples
+          {this.props.test}
         </Text>
       </View>
     );
@@ -18,16 +18,21 @@ class MyComponent extends Component {
 }
 
 class App extends Component {
-  // constructor() {
+  constructor(props) {
+    super(props);
+    this.state = { text: 'Hello World!' };
+  }
 
-  // }
-
+  alteratexto() {
+    this.setState({ text: 'Hello App!' })
+  }
 
   render() {
     return (
       <View>
-        <MyComponent></MyComponent>
+        <MyComponent test={this.state.text}></MyComponent>
         <Button
+          onPress={() => { this.alteratexto() }}
           title='Clicar'
         />
       </View>
