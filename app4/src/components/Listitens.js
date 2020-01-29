@@ -20,7 +20,7 @@ export default class Listitens extends Component {
         return (
             <View>
                 <Itens />
-                {this.state.listitens.map(function (item) { return (<Text key={item.titulo}>{item.titulo}</Text>) })}
+                {this.state.listitens.map(item => (<Text key={item.titulo}>{item.titulo}</Text>))}
             </View>
         );
     }
