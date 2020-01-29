@@ -10,8 +10,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "react-native-axios": "^0.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
