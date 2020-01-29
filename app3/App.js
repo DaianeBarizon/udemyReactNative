@@ -84,13 +84,10 @@ class App extends Component {
             <Button title='tesoura' onPress={() => { this.jokenpo('tesoura') }} />
           </View>
         </View>
-
         <View style={styles.palco}>
           <Text style={styles.resultado}>{this.state.resultado}</Text>
-          <Text>Escolha do Computador: {this.state.escolhaComputador}</Text>
-          <Image source={require('./images/papel.png')} />
-          <Text>Escolha do Usuário: {this.state.escolhaUsuario}</Text>
-          <Image source={require('./images/tesoura.png')} />
+          <Icone escolha={this.state.escolhaComputador} jogador='Computador'></Icone>
+          <Icone escolha={this.state.escolhaUsuario} jogador='Você'></Icone>
         </View>
       </View>
     )
@@ -104,6 +101,35 @@ class Topo extends Component {
         <Image source={require('./images/jokenpo.png')} />
       </View>
     );
+  }
+}
+
+class Icone extends Component {
+  render() {
+    if (this.props.escolha == 'pedra') {
+      return (
+        <View style={styles.icone}>
+          <Text style={styles.jogador}>{this.props.jogador}</Text>
+          <Image source={require('./images/pedra.png')} />
+        </View>
+      );
+    } else if (this.props.escolha == 'tesoura') {
+      return (
+        <View style={styles.icone}>
+          <Text style={styles.jogador}>{this.props.jogador}</Text>
+          <Image source={require('./images/tesoura.png')} />
+        </View>
+      );
+    } else if (this.props.escolha == 'papel') {
+      return (
+        <View style={styles.icone}>
+          <Text style={styles.jogador}>{this.props.jogador}</Text>
+          <Image source={require('./images/papel.png')} />
+        </View>
+      );
+    } else {
+      return false;
+    }
   }
 }
 
@@ -124,6 +150,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'red',
     marginTop: 20,
+  },
+  icone: {
+    alignItems: 'center',
+    marginBottom: 20,
+    fontSize: 18,
+  },
+  jogador: {
+    fontSize: 20,
   }
 });
 
