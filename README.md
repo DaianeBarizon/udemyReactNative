@@ -7,8 +7,6 @@ Curso para Treinamento Udemy Desenvolvedor Multiplataforma Android/IOS com React
 
 Aqui você será introduzido ao universo React Native, aprenderá sobre a sintaxe JSX e será apresentado as features arrow functions e destructuring assignment do Ecmascript 2015 (ES6).
 
-<img src="up %26 going/cover.jpg" width="75"></a>&nbsp;
-
 # APP2
 
 ## Frases do dia:
