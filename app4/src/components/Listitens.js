@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from "react-native";
+import { View, Text } from "react-native";
 
 import Itens from './Itens';
 import axios from 'axios';
@@ -20,7 +20,7 @@ export default class Listitens extends Component {
         return (
             <View>
                 <Itens />
-                {this.state.listitens.map(function (item) { console.log(item.titulo) })}
+                {this.state.listitens.map(function (item) { return (<Text key={item.titulo}>{item.titulo}</Text>) })}
             </View>
         );
     }
