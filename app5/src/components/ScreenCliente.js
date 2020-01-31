@@ -17,8 +17,8 @@ export default class ScreenCliente extends Component {
     render() {
         return (
             <>
-                <StatusBar backgroundColor='#cccccc' />
-                <ScrollNavigation />
+                <StatusBar backgroundColor='#b9c941' />
+                <ScrollNavigation backgroundColor='#b9c941' />
                 <View style={styles.image}>
                     <Image source={detalheCliente} />
                     <Text style={styles.text}>Nossos Clientes</Text>

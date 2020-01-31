@@ -15,8 +15,8 @@ export default class ScreenContato extends Component {
     render() {
         return (
             <>
-                <StatusBar backgroundColor='#cccccc' />
-                <ScrollNavigation />
+                <StatusBar backgroundColor='#61BD8C' />
+                <ScrollNavigation backgroundColor='#61BD8C' />
                 <View style={styles.image}>
                     <Image source={detalheContato} />
                     <Text style={styles.text}>Contato</Text>

@@ -8,7 +8,7 @@ import {
 export default class ScrollNavigation extends Component {
     render() {
         return (
-            <View style={styles.header}>
+            <View style={[styles.header, { backgroundColor: this.props.backgroundColor }]}>
                 <Text style={styles.text}>ATM Consultoria</Text>
             </View>
         );
@@ -17,15 +17,15 @@ export default class ScrollNavigation extends Component {
 
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: '#cccccc',
         alignItems: 'center',
         justifyContent: 'center',
         padding: 5,
         height: 70,
     },
     text: {
-        color: '#000000',
-        fontSize: 18,
+        color: '#ffffff',
+        fontSize: 22,
         textAlign: 'center',
+        fontWeight: 'bold',
     },
 });

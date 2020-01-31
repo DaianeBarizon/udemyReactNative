@@ -15,8 +15,8 @@ export default class ScreenServico extends Component {
     render() {
         return (
             <>
-                <StatusBar backgroundColor='#cccccc' />
-                <ScrollNavigation />
+                <StatusBar backgroundColor='#19d1c8' />
+                <ScrollNavigation backgroundColor='#19d1c8' />
                 <View style={styles.image}>
                     <Image source={detalheServico} />
                     <Text style={styles.text}>Nossos Serviços</Text>

@@ -20,24 +20,24 @@ export default class ScreenMain extends Component {
         return (
             <>
                 <StatusBar backgroundColor='#cccccc' />
-                <ScrollNavigation />
+                <ScrollNavigation backgroundColor='#cccccc' />
                 <View style={styles.main}>
                     <Image style={styles.logo} source={logo} />
                 </View>
                 <View style={styles.main}>
                     <View style={styles.container}>
-                        <TouchableHighlight title='Cliente' onPress={() => this.props.navigation.navigate('Clientes')}>
+                        <TouchableHighlight title='Cliente' underlayColor={'#b9c941'} activeOpacity={1} onPress={() => this.props.navigation.navigate('Clientes')}>
                             <Image style={styles.image} source={menuCliente} />
                         </TouchableHighlight>
-                        <TouchableHighlight title='Serviços' onPress={() => this.props.navigation.navigate('Serviços')}>
+                        <TouchableHighlight title='Serviços' underlayColor={'#19d1c8'} activeOpacity={1} onPress={() => this.props.navigation.navigate('Serviços')}>
                             <Image style={styles.image} source={menuServico} />
                         </TouchableHighlight>
                     </View>
                     <View style={styles.container}>
-                        <TouchableHighlight title='Empresa' onPress={() => this.props.navigation.navigate('Empresa')}>
+                        <TouchableHighlight title='Empresa' underlayColor={'#EC7148'} activeOpacity={1} onPress={() => this.props.navigation.navigate('Empresa')}>
                             <Image style={styles.image} source={menuEmpresa} />
                         </TouchableHighlight>
-                        <TouchableHighlight title='Contato' onPress={() => this.props.navigation.navigate('Contato')}>
+                        <TouchableHighlight title='Contato' underlayColor={'#61BD8C'} activeOpacity={1} onPress={() => this.props.navigation.navigate('Contato')}>
                             <Image style={styles.image} source={menuContato} />
                         </TouchableHighlight>
                     </View>

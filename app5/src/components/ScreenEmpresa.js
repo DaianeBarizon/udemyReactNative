@@ -15,8 +15,8 @@ export default class ScreenEmpresa extends Component {
     render() {
         return (
             <>
-                <StatusBar backgroundColor='#cccccc' />
-                <ScrollNavigation />
+                <StatusBar backgroundColor='#EC7148' />
+                <ScrollNavigation backgroundColor='#EC7148' />
                 <View style={styles.image}>
                     <Image source={detalheEmpresa} />
                     <Text style={styles.text}>A Empresa</Text>
