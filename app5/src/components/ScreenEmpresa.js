@@ -9,9 +9,7 @@ import {
 
 import ScrollNavigation from './ScrollNavigation';
 
-const detalheCliente = require('../images/detalhe_empresa.png');
-const cliente1 = require('../images/cliente1.png');
-const cliente2 = require('../images/cliente2.png');
+const detalheEmpresa = require('../images/detalhe_empresa.png');
 
 export default class ScreenEmpresa extends Component {
     render() {
@@ -20,16 +18,11 @@ export default class ScreenEmpresa extends Component {
                 <StatusBar backgroundColor='#cccccc' />
                 <ScrollNavigation />
                 <View style={styles.image}>
-                    <Image source={detalheCliente} />
+                    <Image source={detalheEmpresa} />
                     <Text style={styles.text}>A Empresa</Text>
                 </View>
-                <View style={styles.client}>
-                    <Image source={cliente1} />
-                    <Text style={styles.textClient}>Lorem Ipsum Dolor</Text>
-                </View>
-                <View style={styles.client}>
-                    <Image source={cliente2} />
-                    <Text style={styles.textClient}>Lorem Ipsum Dolor</Text>
+                <View style={styles.empresa}>
+                    <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
                 </View>
             </>
         );
@@ -43,17 +36,14 @@ const styles = StyleSheet.create({
         margin: 20,
     },
     text: {
-        color: '#b9c941',
+        color: '#EC7148',
         fontSize: 25,
         textAlign: 'center',
         fontWeight: 'bold',
         margin: 10,
     },
-    client: {
+    empresa: {
         margin: 20,
-    },
-    textClient: {
-        margin: 10,
     },
 });
 
