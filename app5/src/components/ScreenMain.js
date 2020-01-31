@@ -4,9 +4,11 @@ import {
     View,
     Image,
     StyleSheet,
+    TouchableHighlight,
 } from 'react-native';
 
 import ScrollNavigation from './ScrollNavigation';
+
 const logo = require('../images/logo.png');
 const menuCliente = require('../images/menu_cliente.png');
 const menuServico = require('../images/menu_servico.png');
@@ -24,12 +26,20 @@ export default class ScreenMain extends Component {
                 </View>
                 <View style={styles.main}>
                     <View style={styles.container}>
-                        <Image style={styles.image} source={menuCliente} />
-                        <Image style={styles.image} source={menuServico} />
+                        <TouchableHighlight onPress={() => this.props.navigation.navigate('Clientes')}>
+                            <Image style={styles.image} source={menuCliente} />
+                        </TouchableHighlight>
+                        <TouchableHighlight onPress={() => this.props.navigation.navigate('Serviços')}>
+                            <Image style={styles.image} source={menuServico} />
+                        </TouchableHighlight>
                     </View>
                     <View style={styles.container}>
-                        <Image style={styles.image} source={menuEmpresa} />
-                        <Image style={styles.image} source={menuContato} />
+                        <TouchableHighlight onPress={() => this.props.navigation.navigate('Empresa')}>
+                            <Image style={styles.image} source={menuEmpresa} />
+                        </TouchableHighlight>
+                        <TouchableHighlight onPress={() => this.props.navigation.navigate('Contato')}>
+                            <Image style={styles.image} source={menuContato} />
+                        </TouchableHighlight>
                     </View>
                 </View>
             </>
