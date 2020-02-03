@@ -34,13 +34,12 @@ export default class Jogo extends Component {
                     <Image source={cara} />
                 </View>
             );
-        } else {
-            return (
-                <View style={styles.background}>
-                    <Image source={coroa} />
-                </View>
-            );
         }
+        return (
+            <View style={styles.background}>
+                <Image source={coroa} />
+            </View>
+        );
     }
 };
 

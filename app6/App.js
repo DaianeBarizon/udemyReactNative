@@ -18,6 +18,10 @@ const App = createAppContainer(
         headerStyle: {
           backgroundColor: '#408560',
         },
+        title: 'Cara ou Coroa',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
       },
     },
     Jogo: {
