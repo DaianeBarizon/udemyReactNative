@@ -1,17 +1,23 @@
 import React from 'react';
 import {
     StyleSheet,
-    Text,
+    Picker,
 } from 'react-native';
 
 const Operacao = () => (
-    <Text style={styles.text}>Eu sou Operacao!</Text>
-)
+    <Picker
+        style={styles.container}
+    >
+        <Picker.Item label="soma" value="soma" />
+        <Picker.Item label="subtração" value="subtração" />
+    </Picker>
+);
 
 const styles = StyleSheet.create({
-    text: {
-        backgroundColor: '#475',
-        color: '#fff',
+    container: {
+        color: '#000',
+        marginBottom: 15,
+        marginTop: 15,
     },
 
 });

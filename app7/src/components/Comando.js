@@ -1,11 +1,11 @@
 import React from 'react';
 import {
     StyleSheet,
-    Text,
+    Button,
 } from 'react-native';
 
 const Comando = () => (
-    <Text style={styles.text}>Eu sou o Comando!</Text>
+    <Button style={styles.text} title='calcular' />
 )
 
 const styles = StyleSheet.create({
