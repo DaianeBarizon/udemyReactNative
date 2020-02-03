@@ -1,23 +1,13 @@
 import React, { Component } from 'react';
-import {
-    StyleSheet,
-    Text,
-} from 'react-native';
+
+import Viewfinder from './Viewfinder';
 
 export default class Result extends Component {
     render() {
         return (
             <>
-                <Text style={styles.text}>Eu sou o Resultado!</Text>
+                <Viewfinder />
             </>
         );
     }
 }
-
-const styles = StyleSheet.create({
-    text: {
-        backgroundColor: '#475',
-        color: '#fff',
-    },
-
-});

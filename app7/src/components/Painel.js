@@ -1,23 +1,15 @@
-import React, { Component } from 'react';
-import {
-    StyleSheet,
-    Text,
-} from 'react-native';
+import React from 'react';
 
-export default class Painel extends Component {
-    render() {
-        return (
-            <>
-                <Text style={styles.text}>Eu sou o Painel!</Text>
-            </>
-        );
-    }
-}
+import Entrada from './Entrada';
+import Operacao from './Operacao';
+import Comando from './Comando';
 
-const styles = StyleSheet.create({
-    text: {
-        backgroundColor: '#475',
-        color: '#fff',
-    },
+const Painel = () => (
+    <>
+        <Entrada />
+        <Operacao />
+        <Comando />
+    </>
+)
 
-});
+export default Painel;
