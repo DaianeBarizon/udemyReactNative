@@ -10,6 +10,7 @@ const Numero = (props) => (
         style={styles.numero}
         placeholder='Número'
         value={props.num}
+        onChangeText={valorDoCampo => props.atualizaValor(props.nome, valorDoCampo)}
     />
 )
 

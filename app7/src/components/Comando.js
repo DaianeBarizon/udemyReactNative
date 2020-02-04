@@ -5,7 +5,11 @@ import {
 } from 'react-native';
 
 const Comando = (props) => (
-    <Button style={styles.text} title='calcular' onPress={props.calcula} />
+    <Button
+        style={styles.text}
+        title='calcular'
+        onPress={props.calcula}
+    />
 )
 
 const styles = StyleSheet.create({

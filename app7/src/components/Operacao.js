@@ -7,7 +7,6 @@ import {
 export default class Operacao extends Component {
     constructor(props) {
         super(props);
-
         this.state = { operacao: '' };
     }
     render() {

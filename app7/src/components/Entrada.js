@@ -10,8 +10,8 @@ import Numero from './Numero';
 const Entrada = (props) => (
     <View style={styles.container}>
         {/* Recebendo por propriedade as informações do Componente Pai 'Painel' */}
-        <Numero num={props.num1} />
-        <Numero num={props.num2} />
+        <Numero num={props.num1} atualizaValor={props.atualizaValor} nome='num1' />
+        <Numero num={props.num2} atualizaValor={props.atualizaValor} nome='num2' />
     </View>
 )
 
