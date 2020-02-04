@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
     StyleSheet,
     Picker,
 } from 'react-native';
 
-const Operacao = () => (
-    <Picker
-        style={styles.container}
-    >
-        <Picker.Item label="soma" value="soma" />
-        <Picker.Item label="subtração" value="subtração" />
-    </Picker>
-);
+export default class Operacao extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = { operacao: '' };
+    }
+    render() {
+        return (
+            <Picker
+                style={styles.container}
+                selectedValue={this.state.operacao}
+                onValueChange={op => { this.setState({ operacao: op }) }}
+            >
+                <Picker.Item label="soma" value="soma" />
+                <Picker.Item label="subtração" value="subtração" />
+            </Picker>
+        );
+    }
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -21,5 +32,3 @@ const styles = StyleSheet.create({
     },
 
 });
-
-export default Operacao;
