@@ -10,10 +10,14 @@ export default class Painel extends Component {
         //variáveis de estado
         //Aqui eu construo o que quero manipular
         this.state = { num1: '10', num2: '15' };
+        //Quando a função calcular chega no componente comando não encontra as variáveis num1 e num2
+        //Então utiliza o bind para preservar o contexto de execução da função
+        this.calcular = this.calcular.bind(this);
     }
 
     calcular() {
-        console.log('Vamos Calcular!');
+        const calcular = parseFloat(this.state.num2) + parseFloat(this.state.num1);
+        console.log(calcular);
     }
 
     render() {
