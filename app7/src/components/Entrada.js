@@ -6,10 +6,12 @@ import {
 
 import Numero from './Numero';
 
-const Entrada = () => (
+//Recuperando a props do Componente Pai 'Painel'
+const Entrada = (props) => (
     <View style={styles.container}>
-        <Numero />
-        <Numero />
+        {/* Recebendo por propriedade as informações do Componente Pai 'Painel' */}
+        <Numero num={props.num1} />
+        <Numero num={props.num2} />
     </View>
 )
 

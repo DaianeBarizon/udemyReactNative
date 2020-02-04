@@ -4,8 +4,8 @@ import {
     Button,
 } from 'react-native';
 
-const Comando = () => (
-    <Button style={styles.text} title='calcular' />
+const Comando = (props) => (
+    <Button style={styles.text} title='calcular' onPress={props.calcula} />
 )
 
 const styles = StyleSheet.create({

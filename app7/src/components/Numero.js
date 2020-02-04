@@ -4,10 +4,12 @@ import {
     TextInput,
 } from 'react-native';
 
-const Numero = () => (
+//recebe props
+const Numero = (props) => (
     <TextInput
         style={styles.numero}
         placeholder='Número'
+        value={props.num}
     />
 )
 
