@@ -1,22 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 
-export default class Viewfinder extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { resultado: '' };
-    }
-    render() {
-        return (
-            <View style={styles.container}>
-                <TextInput style={styles.input}
-                    placeholder='Resultado'
-                    value={this.state.resultado}
-                />
-            </View>
-        )
-    }
-}
+const Viewfinder = props => (
+    <View style={styles.container}>
+        <TextInput style={styles.input}
+            placeholder='Resultado'
+            editable={false}
+            value={props.resultado}
+        />
+    </View>
+);
 
 const styles = StyleSheet.create({
     container: {
@@ -27,3 +20,5 @@ const styles = StyleSheet.create({
     },
 
 });
+
+export default Viewfinder;

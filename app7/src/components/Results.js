@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Viewfinder from './Viewfinder';
 
-export default class Result extends Component {
-    render() {
-        return (
-            <>
-                <Viewfinder />
-            </>
-        );
-    }
-}
+const Result = props => (
+    <Viewfinder resultado={props.resultado} />
+);
+
+export default Result;

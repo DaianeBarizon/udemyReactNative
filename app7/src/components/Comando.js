@@ -8,7 +8,7 @@ const Comando = (props) => (
     <Button
         style={styles.text}
         title='calcular'
-        onPress={props.calcula}
+        onPress={props.calcular}
     />
 )
 
