@@ -42,10 +42,25 @@ Vamos aprender a como podemos implementar a navegação entre cenas dentro dos n
 Nesse App vamos fazer uma super revisão do conteúdo. Além disso iremos aprender a como utilizar o React Native Router Flux para otimizar a navegação entre cenas dentro dos nossos Apps.
 
 
-# APP7
+# APP7 
 
 ## Calculadora:
 Chegou a hora de nos aprofundarmos ainda mais na essência do React. No nosso sétimo App vamos aprender sobre o Virtual DOM e sobre o contexto léxico de execução de funções JavaScript.
+
+
+# Firebase :fire:
+
+## Configurar, salvar, atualizar, recuperar e remover dados:
+Criar projeto na pasta raiz react-native init configFirebase
+(coloque qualquer nome, mas que seja diferente de apenas Firebase).
+
+Instale npm i firebase
+
+Crie uma conta no Firebase
+Escolher Web App
+Ir em Settings -> Geral -> Configuração (Copiar Código na Função do Projeto)
+Ir em Database -> Trocar para Realtime Database -> regras (Trocar para True para liberar a permissão)
+Toda implementação do código vai aparecer em Database na aba de Dados.
 
 
 # APP8
