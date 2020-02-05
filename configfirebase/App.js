@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import firebase from 'firebase';
 
 import {
-  View,
   Text,
   Button,
+  StyleSheet,
 } from 'react-native';
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { pontuacao: 0 };
+  }
+
   UNSAFE_componentWillMount() {
     const firebaseConfig = {
       apiKey: "AIzaSyCWxyi8dbOkGHC2MlDEdlRmjKqb0rYmgRU",
@@ -51,12 +56,41 @@ export default class App extends Component {
     //     nome: Daiane
   }
 
+  listarDados() {
+    var pontuacao = firebase.database().ref('pontuacao');
+    //ouvinte. vai ser chamado sempre os dados forem alterados
+    pontuacao.on('value', (snapshot) => {
+      var pontos = snapshot.val();
+      this.setState({ pontuacao: pontos });
+    });
+  }
+
   render() {
     return (
       <>
-        <View><Text>Olá</Text></View>
-        <Button onPress={() => { this.salvarDados(); }} title='Salvar Dados' color='#147' accessibilityLabel='Salvar Dados' />
+        <Text>Olá Firebase</Text>
+        <Button
+          onPress={() => { this.salvarDados(); }}
+          title='Salvar Dados'
+          color='#147'
+          accessibilityLabel='Salvar Dados'
+        />
+        <Button
+          onPress={() => { this.listarDados(); }}
+          title='Listar Dados'
+          color='#187'
+          accessibilityLabel='Listar Dados'
+        />
+        <Text style={styles.value}>{this.state.pontuacao}</Text>
       </>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  value: {
+    textAlign: 'center',
+    padding: 20,
+    fontSize: 20,
+  },
+});
