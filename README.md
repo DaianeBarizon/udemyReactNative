@@ -47,14 +47,13 @@ Nesse App vamos fazer uma super revisão do conteúdo. Além disso iremos aprend
 ## Calculadora:
 Chegou a hora de nos aprofundarmos ainda mais na essência do React. No nosso sétimo App vamos aprender sobre o Virtual DOM e sobre o contexto léxico de execução de funções JavaScript.
 
-
-# Firebase :fire:
+# Firebase 
 
 ## Configurar, salvar, atualizar, recuperar e remover dados:
 Criar projeto na pasta raiz react-native init configFirebase
 (coloque qualquer nome, mas que seja diferente de apenas Firebase).
 
-Instale npm i firebase
+Instale npm i firebase :fire:
 
 Crie uma conta no Firebase
 Escolher Web App
