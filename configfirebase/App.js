@@ -24,11 +24,31 @@ export default class App extends Component {
   }
 
   salvarDados() {
-    var database = firebase.database();
-    //atualizar
-    //database.ref('pontuacao').set(100);
-    //remover
-    database.ref('pontuacao').remove();
+    var funcionarios = firebase.database().ref('funcionarios');
+    // Inserção de dados
+    funcionarios.child('001').child('nome').set('Daiane');
+    // funcionarios.child('002').child('nome').set('Dai');
+
+    // Remover dados
+    // funcionarios.child('001').remove();
+    // funcionarios.remove(); 
+
+    // Gerar um id único automático. Toda vez que clica no botão e vai gerando identificadores únicos
+    // funcionarios.push().child('nome').set('John');
+
+    // Salvando com Objetos Literais
+    // funcionarios.push().set(
+    //   {
+    //     nome: 'Barizon',
+    //     altura: '1,64',
+    //     peso: '52kg'
+    //   }
+    // );
+
+    // Estrutura de nós
+    // funcionarios
+    //   001
+    //     nome: Daiane
   }
 
   render() {
