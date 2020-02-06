@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, TextInput, Button } from 'react-native';
 
-export default () => (
+const FormCadastro = () => (
     <View style={{ flex: 1, padding: 10 }}>
         <View style={{ flex: 4, justifyContent: 'center' }}>
             <TextInput placeholder="Nome" style={{ fontSize: 20, height: 45 }} />
@@ -13,3 +13,5 @@ export default () => (
         </View>
     </View>
 );
+
+export default FormCadastro;
