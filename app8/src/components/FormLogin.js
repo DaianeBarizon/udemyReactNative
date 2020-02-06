@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TextInput, Button, TouchableHighlight } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { connect } from 'react-redux';
+import { modificaEmail, modificaSenha } from '../actions/authActions';
 
 const FormLongin = (props) => {
     console.log(props);
@@ -11,8 +12,8 @@ const FormLongin = (props) => {
                 <Text style={{ fontSize: 25 }}>WhatsApp Clone</Text>
             </View>
             <View style={{ flex: 2 }}>
-                <TextInput value={props.email} style={{ fontSize: 20, height: 45 }} placeholder='E-mail' />
-                <TextInput value={props.senha} style={{ fontSize: 20, height: 45 }} placeholder='Senha' />
+                <TextInput value={props.email} style={{ fontSize: 20, height: 45 }} placeholder='E-mail' onChangeText={texto => props.modificaEmail(texto)} />
+                <TextInput value={props.senha} style={{ fontSize: 20, height: 45 }} placeholder='Senha' onChangeText={texto => props.modificaSenha(texto)} />
                 <TouchableHighlight onPress={() => Actions.formCadastro()}>
                     <Text style={{ fontSize: 20 }}>Ainda não tem cadastro? Cadastre-se</Text>
                 </TouchableHighlight>
@@ -31,4 +32,4 @@ const mapStateProps = state => (
     }
 )
 
-export default connect(mapStateProps, null)(FormLongin);
+export default connect(mapStateProps, { modificaEmail, modificaSenha })(FormLongin);
