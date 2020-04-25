@@ -4,7 +4,7 @@
 
 <h3 align="center"> Curso para Treinamento - Udemy Desenvolvedor Multiplataforma Android/IOS com React e Redux. </h3>
 
-<h3 align="center"> Criada com a stack <img src="image/react-native.png" alt="react-native" height="18"> React Native e <img src="image/js.png" alt="javaScript" height="18"> Conceitos básicos de JavaScript
+<h5 align="center"> Criada com a stack <img src="image/react-native.png" alt="react-native" height="18"> React Native e <img src="image/js.png" alt="javaScript" height="18"> Conceitos básicos de JavaScript </h5>
 
 ---
 
@@ -18,7 +18,7 @@ Crie Apps Nativos para Android e IOS utilizando JavaScript ES6, React, React Nat
 
 Aqui você será introduzido ao universo React Native, aprenderá sobre a sintaxe JSX e será apresentado as features arrow functions e destructuring assignment do Ecmascript 2015 (ES6).
 
-<img src="image/nr-1.png" alt="Números Randômicos">
+<img src="image/nr-1.png" alt="Números Randômicos" height="150">
 <img src="image/nr-2.png" alt="Números Randômicos">
 
 ## APP2 Frases do dia:
