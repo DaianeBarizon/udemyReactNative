@@ -18,54 +18,56 @@ Crie Apps Nativos para Android e IOS utilizando JavaScript ES6, React, React Nat
 
 Aqui você será introduzido ao universo React Native, aprenderá sobre a sintaxe JSX e será apresentado as features arrow functions e destructuring assignment do Ecmascript 2015 (ES6).
 
-<img src="image/nr-1.png" alt="Números Randômicos" height="460">
-<img src="image/nr-2.png" alt="Números Randômicos" height="460">
+<p align="center">
+    <img src="image/nr-1.png" alt="Números Randômicos" height="460">
+    <img src="image/nr-2.png" alt="Números Randômicos" height="460">
+</p>
 
 ## APP2 Frases do dia:
 
 Nesse App você aprenderá a produzir visuais fantásticos utilizando o flexbox.
 
-<img src="image/fd-1.png" alt="Frases do dia">
-<img src="image/fd-2.png" alt="Frases do dia">
+<img src="image/fd-1.png" alt="Frases do dia" height="460">
+<img src="image/fd-2.png" alt="Frases do dia" height="460">
 
 ## APP3 Game Jokenpô:
 
 Nesse App você aprenderá conceitos muito importantes sobre o controle de estado dos componentes do React (props e states) e também será introduzido ao conceito de modularização para o reaproveitamento de código.
 
-<img src="image/gj-1.png" alt="Game Jokenpô">
-<img src="image/gj-2.png" alt="Game Jokenpô">
+<img src="image/gj-1.png" alt="Game Jokenpô" height="460">
+<img src="image/gj-2.png" alt="Game Jokenpô" height="460">
 
 ## APP4 Catálogo de produtos:
 
 Aqui você aprenderá a utilizar o cliente HTTP Axios para realizar requisições HTTP e recuperar dados de um servidor externo, um excelente passo para criar aplicações capazes de consumir dados de APIs Rest.
 
-<img src="image/cp-1.png" alt="Catálogo de Produtos">
-<img src="image/cp-2.png" alt="Catálogo de Produtos">
+<img src="image/cp-1.png" alt="Catálogo de Produtos" height="460">
+<img src="image/cp-2.png" alt="Catálogo de Produtos" height="460">
 
 ## APP5 ATM Consultoria:
 
 Vamos aprender a como podemos implementar a navegação entre cenas dentro dos nossos Apps.
 
-<img src="image/atm-1.png" alt="Atm Consultoria">
-<img src="image/atm-2.png" alt="Atm Consultoria">
-<img src="image/atm-3.png" alt="Atm Consultoria">
-<img src="image/atm-4.png" alt="Atm Consultoria">
-<img src="image/atm-5.png" alt="Atm Consultoria">
+<img src="image/atm-1.png" alt="Atm Consultoria" height="460">
+<img src="image/atm-2.png" alt="Atm Consultoria" height="460">
+<img src="image/atm-3.png" alt="Atm Consultoria" height="460">
+<img src="image/atm-4.png" alt="Atm Consultoria" height="460">
+<img src="image/atm-5.png" alt="Atm Consultoria" height="460">
 
 ## APP6 Game Cara ou Coroa:
 
 Nesse App vamos fazer uma super revisão do conteúdo. Além disso iremos aprender a como utilizar o React Native Router Flux para otimizar a navegação entre cenas dentro dos nossos Apps.
 
-<img src="image/cc-1.png" alt="Cara ou Coroa">
-<img src="image/cc-2.png" alt="Cara ou Coroa">
-<img src="image/cc-3.png" alt="Cara ou Coroa">
-<img src="image/cc-4.png" alt="Cara ou Coroa">
+<img src="image/cc-1.png" alt="Cara ou Coroa" height="460">
+<img src="image/cc-2.png" alt="Cara ou Coroa" height="460">
+<img src="image/cc-3.png" alt="Cara ou Coroa" height="460">
+<img src="image/cc-4.png" alt="Cara ou Coroa" height="460">
 
 ## APP7 Calculadora:
 
 Chegou a hora de nos aprofundarmos ainda mais na essência do React. No nosso sétimo App vamos aprender sobre o Virtual DOM e sobre o contexto léxico de execução de funções JavaScript.
 
-<img src="image/cal.png" alt="Caluladora">
+<img src="image/cal.png" alt="Caluladora" height="460">
 
 # Firebase 
 
