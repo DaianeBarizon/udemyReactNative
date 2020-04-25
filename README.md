@@ -18,8 +18,8 @@ Crie Apps Nativos para Android e IOS utilizando JavaScript ES6, React, React Nat
 
 Aqui você será introduzido ao universo React Native, aprenderá sobre a sintaxe JSX e será apresentado as features arrow functions e destructuring assignment do Ecmascript 2015 (ES6).
 
-<img src="image/nr-1.png" alt="Números Randômicos" height="150">
-<img src="image/nr-2.png" alt="Números Randômicos">
+<img src="image/nr-1.png" alt="Números Randômicos" height="460">
+<img src="image/nr-2.png" alt="Números Randômicos" height="460">
 
 ## APP2 Frases do dia:
 
